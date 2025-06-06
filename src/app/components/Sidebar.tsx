@@ -213,7 +213,7 @@ export default function SideBar() {
   if (!user) return <h3>Skeleton</h3>;
 
   return (
-    <div className="sticky md:flex hidden top-0 h-screen w-[280px] justify-center items-center shrink-0 z-50">
+    <div className="sticky md:flex hidden top-0 h-screen w-[280px] min-w-[280px] justify-center items-center z-50">
       <div className="w-[90%] h-[95%] bg-bgPrimary border border-border justify-between rounded-3xl relative pt-[0px] items-center flex flex-col">
         <div className="flex flex-col w-full items-center" ref={dropdownRef}>
           <User
